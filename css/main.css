@@ -1,0 +1,190 @@
+#top-pattern {
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+#bottom-pattern {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+html, body {
+    margin: 0;
+}
+
+/*
+*
+*   ----- MAIN ------
+*
+*/
+
+main {
+    width: 68%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+main h1 {
+    font-size: 3rem;
+    color: #512152;
+}
+
+main h5 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*
+*
+*   ----- First Row ------
+*
+*/
+
+
+.column-left {
+    width: 400px;
+}
+
+.ratings {
+    display: block;
+}
+
+.rating {
+    max-width: 320px;
+    min-width: 150px;
+    background-color: #f7f2f8;
+    margin: 20px 0px;
+    padding: 17px 45px;
+}
+
+.rating:nth-child(1) {
+    margin-left: -70px;
+}
+
+.rating:nth-child(2) {
+    margin-left: -35px;
+}
+
+.rating .fa-star:nth-child(5) {
+    margin-right: 15px;
+}
+
+.stars  {
+    float: left;
+}
+
+.fa-star {
+    color: #e89342;
+}
+
+/*
+*
+*   ----- Second Row ------
+*
+*/
+
+.review {
+    min-width: 250px;
+    max-width: 350px;
+    height: 185px;
+    background-color: #511f50;
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 30px 10px 0px;
+}
+
+.review:nth-child(2) {
+    margin-top: 30px;
+}
+
+.review:nth-child(3) {
+    margin-top: 60px;
+    margin-right: 0;
+}
+
+.picture {
+    float: left;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.picture img {
+    display: block;
+    border-radius: 50%;
+    height: 48px;
+}
+
+.about {
+    margin-top: 10px;
+    margin-left: 70px;
+    height: 70px;
+}
+
+.name {
+    font-size: 20px;
+    color: white;
+}
+
+.role {
+    font-size: 18px;
+    color: #c42f9c;
+}
+
+.review-text {
+    font-size: 18px;
+    color: white;
+}
+
+@media only screen and (max-width: 1810px) {
+
+    main {
+        text-align: center;
+    }
+
+    .review:nth-child(2) {
+        margin-top: 10px;
+    }
+    
+    .review:nth-child(3) {
+        margin-top: 10px;
+    }
+
+    .rating {
+        margin-top: 0px;
+    }
+
+    .row {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .review {
+        margin-right: 0px;
+    }  
+
+    .rating:nth-child(1) {
+        margin-left: 0px;
+    }
+    
+    .rating:nth-child(2) {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .stars {
+        float: none;
+        margin-bottom: 10px;
+    }
+}
